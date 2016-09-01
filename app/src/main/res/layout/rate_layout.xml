@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CustomRatingBar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    >
+
+    <TextView
+        android:id="@+id/rating_title_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ellipsize="end"
+        android:text="Rate your recent purchase"
+        android:textColor="#212121"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/rating_subtitle_write_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="Refrog Balck jackes"
+        android:textColor="#878787"
+        android:textSize="12sp" />
+
+    <com.neerajsingh.animationtrial.CustomRatingBar
+        android:id="@+id/ratingBarBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp"
+        CustomRatingBar:numberOfStar="5"
+        CustomRatingBar:setStarDrawable="@drawable/star_green"
+        CustomRatingBar:resetStarDrawable="@drawable/star_black"
+        android:visibility="visible" />
+</LinearLayout>
